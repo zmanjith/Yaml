@@ -7,8 +7,8 @@
            command: date
          - name: copy file
            copy:
-             src: /home/ansible/dev.txt
-             dest: /home/ansible
+             src: /home/ubuntu/dev.txt
+             dest: /home/ubuntu/
 
 - name: play2
   become: yes
