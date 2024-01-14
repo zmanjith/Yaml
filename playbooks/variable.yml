@@ -1,8 +1,8 @@
 - name: play1
-  hosts: all
+  hosts: prod
   vars:
-    name: john
-    age: 25
+    name: Manji
+    age: 20
   tasks:
     - debug:  # is a module that will help you with print a message & also helps you to print the value of a variable just like echo in linux
         msg: "hi there"
@@ -10,3 +10,16 @@
         var: name
     - debug:
         msg: "the value of abc is: {{ age }}"
+- name: Variable try
+  hosts: dev
+  vars:
+    Total: 20k
+    Salary: 1 lakh
+    Percentage: 30%
+  tasks:
+    - debug:  # is a module that will help you with print a message & also helps you to print the value of a variable just like echo in linux
+        msg: "Total debt to the company {{ Total }}"
+    - debug:
+        var: name
+    - debug:
+        msg: "Total salary withdraawing: {{ Salary }}"
