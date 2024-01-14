@@ -19,7 +19,9 @@
   tasks:
     - debug:  # is a module that will help you with print a message & also helps you to print the value of a variable just like echo in linux
         msg: "Total debt to the company {{ Total }}"
+    - debug: 
+        msg: "Percentage of loss with the company"
     - debug:
-        var: name
+        var: Percentage
     - debug:
         msg: "Total salary withdraawing: {{ Salary }}"
